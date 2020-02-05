@@ -1,44 +1,48 @@
 # CSS to the Rescue @cmda-minor-web 19-20
 
-_This course is in English_
+The whole process of CSS to the rescue will be documented here!
 
-In this three week course you are going to create an innovative, experimantal, yet pleasurable user experience by using CSS and SVG. No Javascrpt allowed.
+![image](feest)
 
-## Learning goals
-- _You understand the broader scope of CSS: You can show that CSS can be used for more than just styling web pages._
-- _You understand the progressive enhancement parts of CSS: You can show that you can use the cascade, inheritance and specificity in your project_
-- _You understand the interactive parts of CSS: Is the UX fully enhanced within in given CSS scope?_
-- _You have been experimenting: Have the learning goals been stretched?_
+## Table of contents
+* [To Do](#to-do)
+* [Description](#description)
+* [Usage](#usage)
+  * [Packages and Technologies](#packages-and-technologies)
+* [How It Works](#how-it-works)
+  * [Context](#context)
+  * [Restrictions](#restrictions)
+* [Sources](#sources)
+* [Credits](#credits)
+* [Licence](#licence)
 
-[Rubric](https://docs.google.com/spreadsheets/d/1Xv48MSiACNmnM6nXpGGUb8mJDC459uSaxJszO_zLEp8/edit?usp=sharing)
+## To Do
 
-## Programm
+### Week One
 
-### Week 1 - 👁 C what you did there
+### Week Two
 
-[See all the details of week 1 here](week1/).
+### Week Three
 
-Goals of this week: 
+## Description
 
-- Be inspired
-- Discuss hot CSS topics.
-- Get going!
+## Usage
 
-<!-- [Opdrachten](https://drive.google.com/open?id=1OVhWQNaCgSluYviTKKWcApkyPd23xow1PiExb8GYANM) -->
+## How It Works
 
-<!-- [Slides](https://drive.google.com/open?id=1Rjl9xqXoKniQSRJPdkU1O5YwWC33SJK8KiV0a-H_xZU) -->
+## Sources
 
-### Week 2 - Create Stuff, 🙃 Smile 
+## Credits
 
-This week’s goals: Moar inspiration, create stuff, break stuff, and learn from each other.
+# License
 
-<!-- [Opdrachten](https://drive.google.com/open?id=1GMDTdW3LycAYpZSFI6gk_lrKrx8-zLWrNh69aaVEH5Y) -->
+More information over [License](https://help.github.com/en/articles/licensing-a-repository)
 
-<!-- [Slides](https://drive.google.com/open?id=1IqQeu1m0dQiSC_KCvrn8eencAgtYe7X6qT-gm0n9Bmc) -->
+[MIT](https://github.com/RooyyDoe/css-to-the-rescue-1920/blob/master/LICENSE.txt) © [Roy Kuijper](https://github.com/RooyyDoe)
 
-### Week 3 - 🎪 Show time
 
-Goals: Blow us away.
+
+
 
 <!-- [Opdrachten](https://drive.google.com/open?id=13pKQu72pshaEzKw9q5JHLa-aop85nMP6nDCdqioWjoQ) -->
 
