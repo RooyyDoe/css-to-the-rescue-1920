@@ -18,7 +18,18 @@ The whole process of CSS to the rescue will be documented here!
 
 ## To Do
 
+This is a list of things I want to do in this course:
+
 ### Week One
+
+_Project link_
+
+- [X] Getting inspired by Vitaly Friedman
+- [X] Brainstorm session to figure out my concept
+- [X] Reading articles for **Weekly Specificity**
+- [ ] Flying wish balloon that goes through the sky
+- [X] Writing down the concept for people to better understand
+- [ ] Getting started with the **Zero State** of my concept
 
 ### Week Two
 
@@ -29,6 +40,15 @@ The whole process of CSS to the rescue will be documented here!
 In this user experience a young boy wants to make a wish by letting up a sky lantern. The first screen shows a young boy with a sky lantern in his hands and the user can click on the sky lantern to start the story. The cursor will be a flame that lights the lantern. When the user has clicked on the lantern, it will float out of the boy's hand and start its journey. Clouds will float from the topside of the user's screen past the lantern to show that it's moving upwards. Then text will appear that tells the user that selfless wishes made with a sky lantern will come true. To continue the animation the user should click on the screen.  After this the sky lantern encounters a storm and it is blown away by the strong wind. Again text will appear that tells the user about the wish that the boy made. The boy had made a selfless wish for his sick friend to get better. The user can continue the animation by clicking on the screen. The sky lantern will survive the storm and get past the cloud cover. The screen then slowly becomes white completely and text will appear telling the user that the boy's wish came true.
 
 ## Usage
+
+**Run code**
+```
+Run the index.html into your browser
+```
+
+(Live demo if needed)
+
+**Demo** is also live at: **Still Loading**
 
 ## How It Works
 
