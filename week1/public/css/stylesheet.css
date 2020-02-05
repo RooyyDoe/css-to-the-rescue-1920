@@ -1,53 +1,141 @@
+:root {
+    --color-bg: #f1f1f0;
+    --color-balloon: #C3C4C9;
+    --color-balloon-inside: #A1B2B9;
+    --size-balloon: 14rem;
+    --animation-speed: 3s;
+}
+
 body {
     margin: 20px;
-    background: rgb(225, 229, 205);
+    background: var(--color-bg);
     text-align: center;
+    overflow: hidden
 }
 
 /* Creating and animating the balloon */
 
-div:nth-of-type(1) {
-    display:inline-block;
-    width:120px;
-    height:145px;
-    background:rgb(254, 22, 41);
-    border-radius:80%;
-    position:relative;
-    box-shadow:inset -10px -10px 0 rgba(0,0,0,0.07);
-    margin:20px 30px;
-    transition:transform 0.5s ease;
-    z-index:10;
-    animation:balloons 4s ease-in-out infinite;
-    transform-origin: bottom center;
-}
-
-@keyframes balloons {
-    0%,100%{ transform:translateY(0) rotate(-4deg); }
-    50%{ transform:translateY(-25px) rotate(4deg); }
-}
-
-div:nth-of-type(1):before {
-    content: "▲";
-    font-size: 20px;
-    color: rgb(254, 22, 41);
+section:first-of-type {
+    opacity: 0.6;
     display: block;
-    text-align: center;
-    width: 100%;
     position: absolute;
-    bottom: -12px;
-    z-index: -100;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: balloonBounce var(--animation-speed) infinite;
+    perspective-origin: 50% 100%;
+    perspective: calc(var(--size-balloon) * .5);
+}
+section:first-of-type > div {
+    position: relative;
+    display: block;
+    width: var(--size-balloon);
+    height: calc(var(--size-balloon) * 1.050);
+    background: var(--color-balloon);
+    border-radius: var(--size-balloon);
 }
 
-div:nth-of-type(1):after {
-    display:inline-block; 
-    top:151px;
-    position:absolute;
-    height:250px;
-    width:1px;
-    margin:0 auto;
-    content:"";
-    background:rgba(0,0,0,0.2); 
+section:first-of-type > div::before, ::after {
+    position: absolute;
+    display: block;
+    content: '';
 }
+
+section:first-of-type > div::after {
+    top: 5%;
+    left: 50%;
+    width: 38%;
+    height: 79%;
+    background-color: var(--color-balloon-inside);
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+section:first-of-type > div::before {
+    top: 28%;
+    left: -22.2%;
+    width: calc(var(--size-balloon) + 100px);
+    height: calc(var(--size-balloon) * 1.5);
+    border-radius: calc(var(--size-balloon) / 4);
+    background: linear-gradient(
+    to right,
+    var(--color-balloon) 0%,
+    var(--color-balloon) 35%,
+    var(--color-balloon-inside) 35%,
+    var(--color-balloon-inside) 65%,
+    var(--color-balloon) 50%,
+    var(--color-balloon) 100%
+    );
+    transform: translateZ(calc(var(--size-balloon) * -.80)) rotateX(-50deg);
+}
+
+@keyframes balloonBounce {
+    0% {
+      transform: translate(-50%, -50%)
+    }
+    50% {
+      transform: translate(-50%, -60%)
+    }
+    100% {
+      transform: translate(-50%, -50%)
+    }
+}
+
+/* Lights inside the wish balloon */
+
+section:nth-of-type(2){
+    margin: 545px auto;
+    width: 60px;
+    height: 60px;
+    position:relative;
+    z-index: 5;
+    transform-origin:center bottom;
+    animation: flicker 3ms ease-in infinite alternate,
+               balloonBounce 3s infinite;
+  }
+  
+  .flame{
+    position:absolute;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    bottom: 0;
+  }
+  
+  .yellow{
+    left: 25px; 
+    width: 10px;
+    height: 10px;
+    transform:rotate(-45deg) scale(1.5,1.5);
+    background:gold;
+  }
+  
+  .orange{
+    left: 22.5px; 
+    width: 15px;
+    height: 15px;
+    transform:rotate(-45deg) scale(1.5,1.5);
+    background:orange;
+  }
+  
+  .red{
+    left: 20px; 
+    width: 20px;
+    height: 20px;
+    transform:rotate(-45deg) scale(1.5,1.5);
+    background:OrangeRed;
+  }
+  
+  @keyframes flicker{
+    0%   {transform: rotate(-1deg);}
+    20%  {transform: rotate(1deg);}
+    40%  {transform: rotate(-1deg);}
+    60%  {transform: rotate(1deg) scaleY(1.04);}
+    80%  {transform: rotate(-2deg) scaleY(0.92);}
+    100% {transform: rotate(1deg);}
+  }
+
 
 /* Creating and animating the Clouds */
 
