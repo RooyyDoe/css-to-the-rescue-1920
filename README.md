@@ -41,6 +41,11 @@ In this user experience a young boy wants to make a wish by letting up a sky lan
 
 ## Usage
 
+**Clone the repository of the project**
+```
+git clone https://github.com/RooyyDoe/functional-programming.git
+```
+
 **Run code**
 ```
 Run the index.html into your browser
