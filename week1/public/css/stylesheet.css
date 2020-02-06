@@ -15,7 +15,7 @@ body {
     overflow: hidden;
 }
 
-/* Creating and animating the Clouds */
+/* Creating and animating the Clouds #1*/
 
 section:nth-of-type(1) {
     position: absolute;
@@ -36,27 +36,26 @@ section:nth-of-type(1) > div {
     border-radius: 50%;
 }
 
-section:nth-of-type(1) > div:nth-child(5n + 1){
+section:nth-of-type(1) div:nth-child(5n + 1){
     transform: translateX(-120%);
     margin-top: calc(var(--size-cloud) * 7);
 }
 
-section:nth-of-type(1) > div:nth-child(5n + 2){
+section:nth-of-type(1) div:nth-child(5n + 2){
     transform: translate(-220%, 20%) scale(0.5)
 }
 
-section:nth-of-type(1) > div:nth-child(5n + 3){
+section:nth-of-type(1) div:nth-child(5n + 3){
     transform: translate(150%, 20%) scale(0.8)
 }
 
-section:nth-of-type(1) > div:nth-child(5n + 4){
+section:nth-of-type(1) div:nth-child(5n + 4){
     transform: translate(-250%, 40%) scale(1.2)
 }
 
-section:nth-of-type(1) > div:nth-child(5n + 5){
+section:nth-of-type(1) div:nth-child(5n + 5){
     transform: translate(90%, 120%) scale(0.6)
 }
-    
 
 section:nth-of-type(1) > div::after {
     position: absolute;
@@ -82,9 +81,75 @@ section:nth-of-type(1) > div::before {
     content: '';
 }
 
-/* Creating and animating the balloon */
+/* #2 */
 
 section:nth-of-type(2) {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    width: var(--size-cloud);
+    animation: cloudsSlideDown var(--animation-speed) 2.8s linear infinite;
+}
+
+section:nth-of-type(2) > div {
+    position: relative;
+    display: block;
+    width: var(--size-cloud);
+    height: var(--size-cloud);
+    margin: 1rem;
+    background-color: var(--color-cloud);
+    border-radius: 50%;
+}
+
+section:nth-of-type(2) > div:nth-child(5n + 1){
+    transform: translateX(-120%);
+    margin-top: calc(var(--size-cloud) * 7);
+}
+
+section:nth-of-type(2) > div:nth-child(5n + 2){
+    transform: translate(-220%, 20%) scale(0.5)
+}
+
+section:nth-of-type(2) > div:nth-child(5n + 3){
+    transform: translate(150%, 20%) scale(0.8)
+}
+
+section:nth-of-type(2) > div:nth-child(5n + 4){
+    transform: translate(-250%, 40%) scale(1.2)
+}
+
+section:nth-of-type(2) > div:nth-child(5n + 5){
+    transform: translate(90%, 120%) scale(0.6)
+}
+
+section:nth-of-type(2) > div::after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: var(--size-cloud);
+    height: calc(var(--size-cloud) * .5);
+    background-color: var(--color-cloud);
+    border-radius: var(--size-cloud);
+    transform: translateX(23%);
+    content: '';
+}
+
+section:nth-of-type(2) > div::before {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: var(--size-cloud);
+    height: calc(var(--size-cloud) * .6);
+    background-color: var(--color-cloud);
+    border-radius: var(--size-cloud);
+    transform: translateX(-30%);
+    content: '';
+}
+
+/* Creating and animating the balloon */
+
+section:nth-of-type(3) {
     display: block;
     position: absolute;
     top: 50%;
@@ -96,7 +161,7 @@ section:nth-of-type(2) {
 }
 
 
-section:nth-of-type(2) > div {
+section:nth-of-type(3) > div {
     box-shadow: 0 0 40px 40px #fff, 0 0 100px 50px #0ff;
     position: relative;
     z-index: 4;
@@ -107,13 +172,13 @@ section:nth-of-type(2) > div {
     border-radius: var(--size-balloon);
 }
 
-section:nth-of-type(2) > div::before, ::after {
+section:nth-of-type(3) > div::before, ::after {
     position: absolute;
     display: block;
     content: '';
 }
 
-section:nth-of-type(2) > div::after {
+section:nth-of-type(3) > div::after {
     top: 2%;
     left: 50%;
     width: 38%;
@@ -123,7 +188,7 @@ section:nth-of-type(2) > div::after {
     border-radius: 50%;
 }
 
-section:nth-of-type(2) > div::before {
+section:nth-of-type(3) > div::before {
     top: 28%;
     left: -22.2%;
     width: calc(var(--size-balloon) + 100px);
