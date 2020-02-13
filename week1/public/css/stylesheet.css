@@ -118,7 +118,7 @@ section:nth-of-type(2) > div:nth-child(5n + 3){
 section:nth-of-type(2) > div:nth-child(5n + 4){
     transform: translate(-250%, 40%) scale(1.2)
 }
-
+    
 section:nth-of-type(2) > div:nth-child(5n + 5){
     transform: translate(90%, 120%) scale(0.6)
 }
