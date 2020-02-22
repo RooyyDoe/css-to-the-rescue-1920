@@ -30,8 +30,8 @@ label > section > [object="balloon"] {
     position: relative;
     z-index: 3;
     display: block;
-    width: 14rem;
-    height: calc(14rem * 1.050);
+    width: 12rem;
+    height: calc(12rem * 1.050);
     background: #FAEDB4;
     border-radius: 14rem;
 }
@@ -47,18 +47,18 @@ label > section > [object="balloon"]::after {
     top: 2%;
     left: 50%;
     width: 38%;
-    height: 79%;
+    height: 90%;
     background-color: #F2F5BD;
     transform: translateX(-50%);
     border-radius: 50%;
 }
 
 label > section > [object="balloon"]::before {
-    top: 28%;
-    left: -22.2%;
-    width: calc(14rem + 100px);
-    height: calc(14rem * 1.45);
-    border-radius: calc(14rem / 4);
+    top: 23%;
+    left: -26%;
+    width: calc(12rem + 100px);
+    height: calc(12rem * 1.45);
+    border-radius: calc(12rem / 4);
     background-image: linear-gradient(
     to right,
     #FAEDB4 0%,
@@ -184,7 +184,7 @@ section:nth-of-type(3) > img {
     position: absolute;
     bottom: 10%;
     z-index: 1;
-    left: 54.8%;
+    left: 56.4%;
     width: auto;
     height: 44%;
 }
@@ -225,9 +225,9 @@ input:checked + label > [encryption="flying"] {
 input:checked + label > section > [object="balloon"] {
     box-shadow: 0 0 40px 40px #fff, 0 0 100px 50px #0ff;
     z-index: 4;
-    height: calc(14rem * 1.050);
+    height: calc(12rem * 1.050);
     background: #FAEDB4;
-    border-radius: 14rem;
+    border-radius: 12rem;
     transition: ease-in 2s;
 }
 
@@ -243,17 +243,17 @@ input:checked + label > section > [object="balloon"]::after {
     top: 2%;
     left: 50%;
     width: 38%;
-    height: 79%;
+    height: 90%;
     background-color: #F2F5BD;
     transform: translateX(-50%);
     border-radius: 50%;
 }
 
 input:checked + label > section > [object="balloon"]::before {
-    top: 28%;
-    left: -22.2%;
-    width: calc(14rem + 100px);
-    height: calc(14rem * 1.45);
+    top: 23%;
+    left: -26%;
+    width: calc(12rem + 100px);
+    height: calc(12rem * 1.45);
     border-radius: calc(14rem / 4);
     background-color: #F2F5BD;
     background-image: linear-gradient(
@@ -347,7 +347,6 @@ main > section:nth-of-type(1) {
     top: 0%;
     left: 50%;
     transform: translate(-50%, -60%);
-    background: black;
     width: 8rem;
     animation: cloudsSlideDown 5s linear infinite;
 }
