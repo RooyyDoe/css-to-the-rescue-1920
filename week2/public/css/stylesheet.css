@@ -24,6 +24,7 @@ body {
 
 [trigger="animation"] > section:nth-of-type(3) > [object="balloon"] {
     position: relative;
+    cursor: pointer;
     z-index: 3;
     display: block;
     width: 12rem;
@@ -137,6 +138,7 @@ body {
 =            zero state comment block         =
 =============================================*/
 
+
 [trigger="animation"] > section:nth-of-type(4) > div {
     position: absolute;
     left: -5%;
@@ -200,7 +202,7 @@ label {
     height: 100px;
 }
 
-input:checked + label > [encryption="flying"] {
+input:checked + [trigger="animation"] > [encryption="flying"] {
     opacity: 1;
     top: 43%;
     left: 50%;
@@ -208,20 +210,37 @@ input:checked + label > [encryption="flying"] {
     transition: ease-in 2s;
 }
 
-input:checked + label > section > [object="balloon"] {
+input:checked + [trigger="animation"] > section > [object="balloon"] {
     box-shadow: 0 0 40px 40px #fff, 0 0 100px 50px #0ff;
     transition: ease-in 2s;
+    cursor: default!important;
 }
 
 /*----------  Light animation comment block  ----------*/
 
 
-input:checked + label > section:nth-of-type(3) > article {
+input:checked + [trigger="animation"] > section:nth-of-type(3) > article {
     animation: flicker 3ms infinite alternate;
     transition: ease-in 2s;
     opacity: 0.5;
   }
 
+
+/*----------  clouds floating comment block  ----------*/
+
+input:checked + [trigger="animation"] > section:nth-of-type(1){
+    animation: clouds1SlideDown 5s linear infinite;
+}
+
+input:checked + [trigger="animation"] > section:nth-of-type(2){
+    animation: clouds2SlideDown 5s 3s linear infinite;
+}
+
+input:checked + [trigger="animation"] > section:nth-of-type(4) > div,
+input:checked + [trigger="animation"] > section:nth-of-type(4) > img{
+    transition-duration: 6s;
+    bottom: -100%
+}
 
 /*=====  End of zero state comment block  ======*/
 
@@ -233,17 +252,26 @@ input:checked + label > section:nth-of-type(3) > article {
 =            Animating Clouds                 =
 =============================================*/
 
-main > section:nth-of-type(1) {
+[trigger="animation"] > section:nth-of-type(1){
     position: absolute;
     z-index: -3;
-    top: 0%;
+    top: -110%;
+    left: 50%;
+    transform: translate(-50%, -110%);
+    width: 8rem;
+}
+
+[trigger="animation"] > section:nth-of-type(2) {
+    position: absolute;
+    z-index: -3;
+    top: -110%;
     left: 50%;
     transform: translate(-50%, -60%);
     width: 8rem;
-    animation: cloudsSlideDown 5s linear infinite;
 }
 
-main > section:nth-of-type(1) > div {
+[trigger="animation"] > section:nth-of-type(1) > div,
+[trigger="animation"] > section:nth-of-type(2) > div {
     position: relative;
     display: block;
     width: 8rem;
@@ -253,28 +281,29 @@ main > section:nth-of-type(1) > div {
     border-radius: 50%;
 }
 
-main > section:nth-of-type(1) div:nth-child(5n + 1){
+[trigger="animation"] > section:nth-of-type(1) div:nth-child(5n + 1){
     transform: translateX(-120%);
     margin-top: calc(8rem * 7);
 }
 
-main > section:nth-of-type(1) div:nth-child(5n + 2){
+[trigger="animation"] > section:nth-of-type(1) div:nth-child(5n + 2){
     transform: translate(-350%, 20%) scale(0.5)
 }
 
-main > section:nth-of-type(1) div:nth-child(5n + 3){
+[trigger="animation"] > section:nth-of-type(1) div:nth-child(5n + 3){
     transform: translate(250%, 20%) scale(0.8)
 }
 
-main > section:nth-of-type(1) div:nth-child(5n + 4){
-    transform: translate(-250%, 40%) scale(1.2)
+[trigger="animation"] > section:nth-of-type(1) div:nth-child(5n + 4){
+    transform: translate(-400%, 40%) scale(1.2)
 }
 
-main > section:nth-of-type(1) div:nth-child(5n + 5){
-    transform: translate(190%, 120%) scale(0.6)
+[trigger="animation"] > section:nth-of-type(1) div:nth-child(5n + 5){
+    transform: translate(190%, 60%) scale(0.6)
 }
 
-main > section:nth-of-type(1) > div::after {
+[trigger="animation"] > section:nth-of-type(1) > div::after,
+[trigger="animation"] > section:nth-of-type(2) > div::after {
     position: absolute;
     bottom: 0;
     display: block;
@@ -286,7 +315,8 @@ main > section:nth-of-type(1) > div::after {
     content: '';
 }
 
-main > section:nth-of-type(1) > div::before {
+[trigger="animation"] > section:nth-of-type(1) > div::before,
+[trigger="animation"] > section:nth-of-type(2) > div::before {
     position: absolute;
     bottom: 0;
     display: block;
@@ -304,79 +334,49 @@ main > section:nth-of-type(1) > div::before {
 
 /*----------  Animating Clouds #2 comment block  ----------*/
 
-
-
-
-
-
-main > section:nth-of-type(2) {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    z-index: -3;
-    transform: translate(-50%, -0%);
-    width: 8rem;
-    animation: cloudsSlideDown 5s 2.8s linear infinite;
-}
-
-main > section:nth-of-type(2) > div {
-    position: relative;
-    display: block;
-    width: 8rem;
-    height: 8rem;
-    margin: 1rem;
-    background-color: #fff;
-    border-radius: 50%;
-}
-
-main > section:nth-of-type(2) > div:nth-child(5n + 1){
+[trigger="animation"] > section:nth-of-type(2) > div:nth-child(5n + 1){
     transform: translateX(-120%);
     margin-top: calc(8rem * 7);
 }
 
-main > section:nth-of-type(2) > div:nth-child(5n + 2){
+[trigger="animation"] > section:nth-of-type(2) > div:nth-child(5n + 2){
     transform: translate(-350%, 20%) scale(0.5)
 }
 
-main > section:nth-of-type(2) > div:nth-child(5n + 3){
+[trigger="animation"] > section:nth-of-type(2) > div:nth-child(5n + 3){
     transform: translate(350%, 20%) scale(0.8)
 }
 
-main > section:nth-of-type(2) > div:nth-child(5n + 4){
-    transform: translate(-250%, 40%) scale(1.2)
+[trigger="animation"] > section:nth-of-type(2) > div:nth-child(5n + 4){
+    transform: translate(-200%, 40%) scale(1.2)
 }
     
-main > section:nth-of-type(2) > div:nth-child(5n + 5){
+[trigger="animation"] > section:nth-of-type(2) > div:nth-child(5n + 5){
     transform: translate(90%, 120%) scale(0.6)
-}
-
-main > section:nth-of-type(2) > div::after {
-    position: absolute;
-    bottom: 0;
-    display: block;
-    width: 8rem;
-    height: calc(8rem * .5);
-    background-color: #fff;
-    border-radius: 8rem;
-    transform: translateX(23%);
-    content: '';
-}
-
-main > section:nth-of-type(2) > div::before {
-    position: absolute;
-    bottom: 0;
-    display: block;
-    width: 8rem;
-    height: calc(8rem * .6);
-    background-color: #fff;
-    border-radius: 8rem;
-    transform: translateX(-30%);
-    content: '';
 }
 
 /*=====  End of Section comment block  ======*/
 
 
+
+
+
+
+/*=============================================
+=          story-time comment block           =
+=============================================*/
+
+path {
+    fill: transparent;
+}
+  
+text {
+    fill: #FF9800;
+}
+
+.help {
+    fill: blue;
+}
 
 
 
@@ -395,12 +395,21 @@ main > section:nth-of-type(2) > div::before {
     100% {transform: rotate(1deg);}
 }
 
-@keyframes cloudsSlideDown {
+@keyframes clouds1SlideDown {
     0% {
-      transform: translate(-50%, -110%)
+      transform: translate(-50%, -60%)
     }
     100% {
-      transform: translate(-50%, -10%)
+      transform: translate(-50%, 65%)
+    }
+}
+
+@keyframes clouds2SlideDown {
+    0% {
+      transform: translate(-50%, -60%)
+    }
+    100% {
+      transform: translate(-50%, 65%)
     }
 }
 

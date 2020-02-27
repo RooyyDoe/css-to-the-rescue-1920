@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head id="head">
+    <meta charset="utf-8" />
+
+    <title>CSS To The Rescue</title>
+    <meta name="description" content="CTTR" />
+    <meta name="author" content="Rooyyke" />
+
+    <link rel="stylesheet" href="./public/css/stylesheet.css" />
+  </head>
+
+  <body id="body">
+    <div>
+      <a href="#body">Daytime</a>
+      <a href="#head">Nighttime</a>
+    </div>
+    <main>
+      <!-- Balloon with light -->
+      <input type="radio" id="zero" />
+      <label trigger="zero-state" for="zero">
+        <!-- Floating clouds #1 -->
+        <section>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </section>
+        <!-- Floating clouds #2 -->
+        <section>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </section>
+
+        <p>Click Here</p>
+
+        <section>
+          <!-- Balloon -->
+          <div></div>
+          <!-- Lights -->
+          <article>
+            <div class="red flame"></div>
+            <div class="orange flame"></div>
+            <div class="yellow flame"></div>
+          </article>
+        </section>
+
+        <section>
+          <div></div>
+          <img src="./public/images/SVG/Person.svg" />
+        </section>
+
+        <section>
+          <input type="radio" id="text-1" />
+          <label trigger="chapter-one" for="text-1">
+            <div>
+              <!-- https://dev.to/theliquidcharcoal/pure-html-animation-animate-svg-with-animate-2a5m -->
+              <div story="first-part-1">
+                <!-- tutorial: https://css-tricks.com/snippets/svg/curved-text-along-path/ -->
+                <svg width="100%" height="200px">
+                  <path
+                    id="curve"
+                    d="M0 67C 273,183822,-401920.00,106 V 359 H 0 V 67Z"
+                  >
+                    <animate
+                      repeatCount="indefinite"
+                      fill="#454599"
+                      attributeName="d"
+                      dur="5s"
+                      values="
+						M0 77 
+						C 473,283
+						822,-40
+						1920,116 
+
+						V 359 
+						H 0 
+						V 67 
+						Z; 
+
+						M0 77 
+						C 473,-40
+						1222,283
+						1920,136 
+
+						V 359 
+						H 0 
+						V 67 
+						Z; 
+
+						M0 77 
+						C 973,260
+						1722,-53
+						1920,120 
+
+						V 359 
+						H 0 
+						V 67 
+						Z; 
+
+						M0 77 
+						C 473,283
+						822,-40
+						1920,116 
+
+						V 359 
+						H 0 
+						V 67 
+						Z
+						"
+                    ></animate>
+                  </path>
+                  <text x="25">
+                    <textPath xlink:href="#curve">
+                      Young Thomas made a beautiful yellow sky
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
+              <div story="first-part-2">
+                <!-- tutorial: https://css-tricks.com/snippets/svg/curved-text-along-path/ -->
+                <svg width="100%" height="200px">
+                  <path
+                    id="curve"
+                    d="M0 67C 273,183822,-401920.00,106 V 359 H 0 V 67Z"
+                  >
+                    <animate
+                      repeatCount="indefinite"
+                      fill="#454599"
+                      attributeName="d"
+                      dur="5s"
+                      values="
+						M0 77 
+						C 473,283
+						822,-40
+						1920,116 
+
+						V 359 
+						H 0 
+						V 67 
+						Z; 
+
+						M0 77 
+						C 473,-40
+						1222,283
+						1920,136 
+
+						V 359 
+						H 0 
+						V 67 
+						Z; 
+
+						M0 77 
+						C 973,260
+						1722,-53
+						1920,120 
+
+						V 359 
+						H 0 
+						V 67 
+						Z; 
+
+						M0 77 
+						C 473,283
+						822,-40
+						1920,116 
+
+						V 359 
+						H 0 
+						V 67 
+						Z
+						"
+                    ></animate>
+                  </path>
+                  <text x="25">
+                    <textPath xlink:href="#curve">
+                      lantern. He took it to his special place where he
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
+              <div story="first-part-3">
+                <!-- tutorial: https://css-tricks.com/snippets/svg/curved-text-along-path/ -->
+                <svg width="100%" height="200px">
+                  <path
+                    id="curve"
+                    d="M0 67C 273,183822,-401920.00,106 V 359 H 0 V 67Z"
+                  >
+                    <animate
+                      repeatCount="indefinite"
+                      fill="#454599"
+                      attributeName="d"
+                      dur="5s"
+                      values="
+						M0 77 
+						C 473,283
+						822,-40
+						1920,116 
+
+						V 359 
+						H 0 
+						V 67 
+						Z; 
+
+						M0 77 
+						C 473,-40
+						1222,283
+						1920,136 
+
+						V 359 
+						H 0 
+						V 67 
+						Z; 
+
+						M0 77 
+						C 973,260
+						1722,-53
+						1920,120 
+
+						V 359 
+						H 0 
+						V 67 
+						Z; 
+
+						M0 77 
+						C 473,283
+						822,-40
+						1920,116 
+
+						V 359 
+						H 0 
+						V 67 
+						Z
+						"
+                    ></animate>
+                  </path>
+                  <text x="25">
+                    <textPath xlink:href="#curve">
+                      used to go playing with his mother. This place
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
+              <div story="first-part-4">
+                <!-- tutorial: https://css-tricks.com/snippets/svg/curved-text-along-path/ -->
+                <svg width="100%" height="200px">
+                  <path
+                    id="curve"
+                    d="M0 67C 273,183822,-401920.00,106 V 359 H 0 V 67Z"
+                  >
+                    <animate
+                      repeatCount="indefinite"
+                      fill="#454599"
+                      attributeName="d"
+                      dur="5s"
+                      values="
+						M0 77 
+						C 473,283
+						822,-40
+						1920,116 
+
+						V 359 
+						H 0 
+						V 67 
+						Z; 
+
+						M0 77 
+						C 473,-40
+						1222,283
+						1920,136 
+
+						V 359 
+						H 0 
+						V 67 
+						Z; 
+
+						M0 77 
+						C 973,260
+						1722,-53
+						1920,120 
+
+						V 359 
+						H 0 
+						V 67 
+						Z; 
+
+						M0 77 
+						C 473,283
+						822,-40
+						1920,116 
+
+						V 359 
+						H 0 
+						V 67 
+						Z
+						"
+                    ></animate>
+                  </path>
+                  <text x="25">
+                    <textPath xlink:href="#curve">
+                      was in a large open field near his home,
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
+              <div story="first-part-5">
+                <!-- tutorial: https://css-tricks.com/snippets/svg/curved-text-along-path/ -->
+                <svg width="100%" height="200px">
+                  <path
+                    id="curve"
+                    d="M0 67C 273,183822,-401920.00,106 V 359 H 0 V 67Z"
+                  >
+                    <animate
+                      repeatCount="indefinite"
+                      fill="#454599"
+                      attributeName="d"
+                      dur="5s"
+                      values="
+						M0 77 
+						C 473,283
+						822,-40
+						1920,116 
+
+						V 359 
+						H 0 
+						V 67 
+						Z; 
+
+						M0 77 
+						C 473,-40
+						1222,283
+						1920,136 
+
+						V 359 
+						H 0 
+						V 67 
+						Z; 
+
+						M0 77 
+						C 973,260
+						1722,-53
+						1920,120 
+
+						V 359 
+						H 0 
+						V 67 
+						Z; 
+
+						M0 77 
+						C 473,283
+						822,-40
+						1920,116 
+
+						V 359 
+						H 0 
+						V 67 
+						Z
+						"
+                    ></animate>
+                  </path>
+                  <text x="25">
+                    <textPath xlink:href="#curve">
+                      where the sky was wide and open. At this
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
+              <div story="first-part-6">
+                <!-- tutorial: https://css-tricks.com/snippets/svg/curved-text-along-path/ -->
+                <svg width="100%" height="200px">
+                  <path
+                    id="curve"
+                    d="M0 67C 273,183822,-401920.00,106 V 359 H 0 V 67Z"
+                  >
+                    <animate
+                      repeatCount="indefinite"
+                      fill="#454599"
+                      attributeName="d"
+                      dur="5s"
+                      values="
+						M0 77 
+						C 473,283
+						822,-40
+						1920,116 
+
+						V 359 
+						H 0 
+						V 67 
+						Z; 
+
+						M0 77 
+						C 473,-40
+						1222,283
+						1920,136 
+
+						V 359 
+						H 0 
+						V 67 
+						Z; 
+
+						M0 77 
+						C 973,260
+						1722,-53
+						1920,120 
+
+						V 359 
+						H 0 
+						V 67 
+						Z; 
+
+						M0 77 
+						C 473,283
+						822,-40
+						1920,116 
+
+						V 359 
+						H 0 
+						V 67 
+						Z
+						"
+                    ></animate>
+                  </path>
+                  <text x="25">
+                    <textPath xlink:href="#curve">
+                      place he lit up his lantern and made a
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
+              <div story="first-part-7">
+                <!-- tutorial: https://css-tricks.com/snippets/svg/curved-text-along-path/ -->
+                <svg width="100%" height="200px">
+                  <path
+                    id="curve"
+                    d="M0 67C 273,183822,-401920.00,106 V 359 H 0 V 67Z"
+                  >
+                    <animate
+                      repeatCount="indefinite"
+                      fill="#454599"
+                      attributeName="d"
+                      dur="5s"
+                      values="
+						M0 77 
+						C 473,283
+						822,-40
+						1920,116 
+
+						V 359 
+						H 0 
+						V 67 
+						Z; 
+
+						M0 77 
+						C 473,-40
+						1222,283
+						1920,136 
+
+						V 359 
+						H 0 
+						V 67 
+						Z; 
+
+						M0 77 
+						C 973,260
+						1722,-53
+						1920,120 
+
+						V 359 
+						H 0 
+						V 67 
+						Z; 
+
+						M0 77 
+						C 473,283
+						822,-40
+						1920,116 
+
+						V 359 
+						H 0 
+						V 67 
+						Z
+						"
+                    ></animate>
+                  </path>
+                  <text x="25">
+                    <textPath xlink:href="#curve">
+                      special wish.
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
+
+              <a>Next</a>
+
+              <input type="checkbox" id="readme-1" />
+              <label trigger="readme-1" for="readme-1">
+                <a>Talk!</a>
+                <embed
+                  src="./public/videos/WhatsApp Audio 2020-02-27 at 14.34.22.mp4"
+                />
+              </label>
+            </div>
+            <section>
+              <input type="checkbox" id="chapter-two" />
+              <label trigger="chapter-two" for="chapter-two">
+                <section>
+                  <div>
+                    <!-- https://codepen.io/IndependentSw/pen/zKkxzJ -->
+                    <article>
+                      <p>
+                        He made his wish for his mother, who was very ill. All
+                        Thomas wanted was for his mother to get better and play
+                        with him again at their special place in the fields, but
+                        the doctors had told him that his mother might not get
+                        better.
+                      </p>
+                      <p>
+                        Thomas had never felt more sad and even his granny
+                        couldn’t cheer him up. He stayed a lot at his granny’s
+                        lately and one day he had found a book full of legends.
+                        One of the legends spoke about the magic of sky
+                        lanterns.
+                      </p>
+                    </article>
+                  </div>
+                  <input type="checkbox" id="readme-2" />
+                  <label trigger="readme-2" for="readme-2">
+                    <a>Talk!</a>
+                    <embed
+                      src="./public/videos/WhatsApp Audio 2020-02-27 at 14.35.33.mp4"
+                    />
+                  </label>
+                  <a> Next </a>
+                </section>
+                <section>
+                  <input type="checkbox" id="chapter-three" />
+                  <label trigger="chapter-three" for="chapter-three">
+                    <div>
+                      <article>
+                        <h2>
+                          <span data-text="The legend">
+                            <span
+                              class="firstGlitch"
+                              data-text="The legend"
+                            ></span>
+                            <span
+                              class="secondGlitch"
+                              data-text="The legend"
+                            ></span>
+                            The legend
+                          </span>
+                          tells that if you let up a
+                          <span data-text=" sky lantern">
+                            <span
+                              class="firstGlitch"
+                              data-text=" sky lantern"
+                            ></span>
+                            <span
+                              class="secondGlitch"
+                              data-text=" sky lantern"
+                            ></span>
+                            sky lantern
+                          </span>
+                          and make a wish,
+                        </h2>
+                      </article>
+                      <article>
+                        <h2>
+                          the
+                          <span data-text="magic">
+                            <span class="firstGlitch" data-text="magic"></span>
+                            <span class="secondGlitch" data-text="magic"></span>
+                            magic
+                          </span>
+                          of the sky lantern
+                        </h2>
+                      </article>
+                      <article>
+                        <h2>
+                          will make it come
+                          <span data-text="true.">
+                            <span class="firstGlitch" data-text="true."></span>
+                            <span class="secondGlitch" data-text="true."></span>
+                            true.
+                          </span>
+                          There
+                        </h2>
+                      </article>
+                      <article>
+                        <h2>
+                          is one
+                          <span data-text="rule,">
+                            <span class="firstGlitch" data-text="rule,"></span>
+                            <span class="secondGlitch" data-text="rule,"></span>
+                            rule,
+                          </span>
+                          however, the wish
+                        </h2>
+                      </article>
+                      <article>
+                        <h2>
+                          that you make has to be a
+                          <span data-text="pure">
+                            <span class="firstGlitch" data-text="pure"></span>
+                            <span class="secondGlitch" data-text="pure"></span>
+                            pure
+                          </span>
+                        </h2>
+                      </article>
+                      <article>
+                        <h2>
+                          and
+                          <span data-text="selfless wish.">
+                            <span
+                              class="firstGlitch"
+                              data-text="selfless wish."
+                            ></span>
+                            <span
+                              class="secondGlitch"
+                              data-text="selfless wish."
+                            ></span>
+                            selfless wish.
+                          </span>
+                          The wish that
+                        </h2>
+                      </article>
+                      <article>
+                        <h2>
+                          <span data-text="Thomas">
+                            <span class="firstGlitch" data-text="Thomas"></span>
+                            <span
+                              class="secondGlitch"
+                              data-text="Thomas"
+                            ></span>
+                            Thomas
+                          </span>
+                          made was such a selfless
+                        </h2>
+                      </article>
+                      <article>
+                        <h2>
+                          wish as he wished for his
+                          <span data-text="mother">
+                            <span class="firstGlitch" data-text="mother"></span>
+                            <span
+                              class="secondGlitch"
+                              data-text="mother"
+                            ></span>
+                            mother
+                          </span>
+                        </h2>
+                      </article>
+                      <article>
+                        <h2>
+                          to get
+                          <span data-text="better.">
+                            <span
+                              class="firstGlitch"
+                              data-text="better."
+                            ></span>
+                            <span
+                              class="secondGlitch"
+                              data-text="better."
+                            ></span>
+                            better.
+                          </span>
+                          The sky lantern that
+                        </h2>
+                      </article>
+                      <article>
+                        <h2>
+                          <span data-text="Thomas">
+                            <span class="firstGlitch" data-text="Thomas"></span>
+                            <span
+                              class="secondGlitch"
+                              data-text="Thomas"
+                            ></span>
+                            Thomas
+                          </span>
+                          had let up rose and rose
+                        </h2>
+                      </article>
+                      <article>
+                        <h2>
+                          into the
+                          <span data-text="sky">
+                            <span class="firstGlitch" data-text="sky"></span>
+                            <span class="secondGlitch" data-text="sky"></span>
+                            sky
+                          </span>
+                          and the lantern’s magic
+                        </h2>
+                      </article>
+                      <article>
+                        <h2>
+                          did its work. The
+                          <span data-text="next day">
+                            <span
+                              class="firstGlitch"
+                              data-text="next day"
+                            ></span>
+                            <span
+                              class="secondGlitch"
+                              data-text="next day"
+                            ></span>
+                            next day
+                          </span>
+                          Thomas visited his mother in the
+                          <span data-text="hospital">
+                            <span
+                              class="firstGlitch"
+                              data-text="hospital"
+                            ></span>
+                            <span
+                              class="secondGlitch"
+                              data-text="hospital"
+                            ></span>
+                            hospital
+                          </span>
+                          together
+                        </h2>
+                      </article>
+                      <article>
+                        <h2>
+                          with his
+                          <span data-text="granny">
+                            <span class="firstGlitch" data-text="granny"></span>
+                            <span
+                              class="secondGlitch"
+                              data-text="granny"
+                            ></span>
+                            granny
+                          </span>
+                          and the
+                          <span data-text="doctors">
+                            <span
+                              class="firstGlitch"
+                              data-text="doctors"
+                            ></span>
+                            <span
+                              class="secondGlitch"
+                              data-text="doctors"
+                            ></span>
+                            doctors
+                          </span>
+                          told him a
+                          <span data-text="miracle">
+                            <span
+                              class="firstGlitch"
+                              data-text="miracle"
+                            ></span>
+                            <span
+                              class="secondGlitch"
+                              data-text="miracle"
+                            ></span>
+                            miracle
+                          </span>
+                          had happened.
+                        </h2>
+                      </article>
+                      <article>
+                        <h2>
+                          His
+                          <span data-text="mother">
+                            <span class="firstGlitch" data-text="mother"></span>
+                            <span
+                              class="secondGlitch"
+                              data-text="mother"
+                            ></span>
+                            mother
+                          </span>
+                          was cured.
+                        </h2>
+                      </article>
+                      <input type="checkbox" id="readme-3" />
+                      <label trigger="readme-3" for="readme-3">
+                        <a>Talk!</a>
+                        <embed
+                          src="./public/videos/WhatsApp Audio 2020-02-26 at 17.40.38.mp4"
+                        />
+                      </label>
+                      <a> Next </a>
+                    </div>
+                    <div></div>
+                  </label>
+                </section>
+              </label>
+            </section>
+          </label>
+        </section>
+      </label>
+
+      <!-- Zero state (Ground/Character) -->
+    </main>
+  </body>
+</html>

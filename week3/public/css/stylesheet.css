@@ -1,0 +1,1555 @@
+body {
+  text-align: center;
+  overflow: hidden;
+  font-family: "Montserrat";
+}
+
+body > div {
+  position: absolute;
+  top: 7%;
+  left: 2%;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+body > div > a:nth-of-type(1) {
+  color: white;
+  padding: 1em;
+  background: #f39b11;
+  border: 1px solid #f39b11;
+  transition: 0.5s;
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+
+body > div > a:nth-of-type(1):hover {
+  background-color: #f1c40d;
+  border: 1px solid #f1c40d;
+  transition: 0.5s;
+}
+
+body > div > a:nth-of-type(2) {
+  color: white;
+  padding: 1em;
+  background: #2980b9;
+  border: 1px solid #2980b9;
+  transition: 0.5s;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+body > div > a:nth-of-type(2):hover {
+  background-color: #3497db;
+  border: 1px solid #3497db;
+  transition: 0.5s;
+}
+
+/*=============================================
+=       Zero state balloon comment block      =
+=============================================*/
+
+[trigger="zero-state"] > section:nth-of-type(3) {
+  display: block;
+  position: absolute;
+  opacity: 0.6;
+  top: 54%;
+  left: 51.5%;
+  z-index: 20;
+  transform: translate(-50%, -50%);
+  perspective-origin: 50% 100%;
+  perspective: calc(14rem * 0.5);
+}
+
+[trigger="zero-state"] > section:nth-of-type(3) > div {
+  position: relative;
+  cursor: pointer;
+  z-index: 3;
+  display: block;
+  width: 12rem;
+  height: calc(12rem * 1.05);
+  background: #faedb4;
+  border-radius: 14rem;
+}
+
+[trigger="zero-state"] > section:nth-of-type(3) > div::before,
+[trigger="zero-state"] > section:nth-of-type(3) > div::after {
+  position: absolute;
+  display: block;
+  content: "";
+}
+
+[trigger="zero-state"] > section:nth-of-type(3) > div::after {
+  top: 2%;
+  left: 50%;
+  width: 38%;
+  height: 90%;
+  background-color: #f2f5bd;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+[trigger="zero-state"] > section:nth-of-type(3) > div::before {
+  top: 23%;
+  left: -26%;
+  width: calc(12rem + 100px);
+  height: calc(12rem * 1.45);
+  border-radius: calc(12rem / 4);
+  background-image: linear-gradient(
+    to right,
+    #faedb4 0%,
+    #faedb4 35%,
+    #f2f5bd 35%,
+    #f2f5bd 65%,
+    #faedb4 50%,
+    #faedb4 100%
+  );
+  transform: translateZ(calc(14rem * -0.8)) rotateX(-50deg);
+}
+
+/*----------  Light animation comment block  ----------*/
+
+[trigger="zero-state"] > section:nth-of-type(3) > article {
+  position: absolute;
+  z-index: 21;
+  opacity: 0;
+  top: 105%;
+  left: 50%;
+}
+
+[trigger="zero-state"] > section:nth-of-type(3) > article > .flame {
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  transform-origin: center bottom;
+  bottom: 0px;
+}
+
+[trigger="zero-state"] > section:nth-of-type(3) > article > .yellow {
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 9px;
+  height: 9px;
+  transform: rotate(-45deg) scale(1.5, 1.5);
+  background: gold;
+}
+
+[trigger="zero-state"] > section:nth-of-type(3) > article > .orange {
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 13px;
+  height: 13px;
+  transform: rotate(-45deg) scale(1.5, 1.5);
+  background: orange;
+}
+
+[trigger="zero-state"] > section:nth-of-type(3) > article > .red {
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  transform: rotate(-45deg) scale(1.5, 1.5);
+  background: OrangeRed;
+}
+
+/*=====  End of Section comment block  ======*/
+
+/*=============================================
+=         click here section block            =
+=============================================*/
+
+[trigger="zero-state"] > p {
+  position: absolute;
+  color: black;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+  transform: rotate(-10deg);
+  top: 32%;
+  left: 37%;
+}
+
+[trigger="zero-state"] > p:after {
+  content: "\21D3";
+  position: absolute;
+  top: 2em;
+  right: -1em;
+  transform: rotate(-25deg);
+}
+
+input:checked + [trigger="zero-state"] > p {
+  opacity: 0;
+  transition: 2s;
+  pointer-events: none;
+}
+
+/*=====  End of click here Section block  ======*/
+
+/*=============================================
+=            zero state comment block         =
+=============================================*/
+
+[trigger="zero-state"] > section:nth-of-type(4) > div {
+  position: absolute;
+  left: -5%;
+  bottom: 0;
+  border-top-right-radius: 80%;
+  border-top-left-radius: 80%;
+  pointer-events: none;
+  box-shadow: -2px -2px 10px 0px rgba(0, 0, 0, 0.2);
+  width: 110%;
+  height: 8.5em;
+  background-color: #83c54a;
+}
+
+[trigger="zero-state"] > section:nth-of-type(4) > div::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  border-top-right-radius: 100%;
+  pointer-events: none;
+  box-shadow: -2px -2px 10px 0px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  height: 15em;
+  z-index: -2;
+  background-color: #6abe45;
+}
+
+[trigger="zero-state"] > section:nth-of-type(4) > div::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  box-shadow: -2px -2px 10px 0px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 100%;
+  width: 80%;
+  height: 16em;
+  z-index: -2;
+  background-color: #48b847;
+}
+
+[trigger="zero-state"] > section:nth-of-type(4) > img {
+  position: absolute;
+  pointer-events: none;
+  bottom: 10%;
+  z-index: 1;
+  left: 56.4%;
+  width: auto;
+  height: 44%;
+}
+
+/*----------  Balloon without light comment block  ----------*/
+
+input {
+  display: none;
+}
+
+label {
+  width: 100px;
+  height: 100px;
+}
+
+input:checked + [trigger="zero-state"] > section:nth-of-type(3) {
+  opacity: 1;
+  top: 43%;
+  left: 50%;
+  animation: balloonBounce 3s infinite;
+  transition: ease-in 2s;
+}
+
+input:checked + [trigger="zero-state"] > section:nth-of-type(3) > div {
+  box-shadow: 0 0 40px 40px #fff, 0 0 100px 50px #0ff;
+  transition: ease-in 2s;
+  cursor: default !important;
+}
+
+/*----------  Light animation comment block  ----------*/
+
+input:checked + [trigger="zero-state"] > section:nth-of-type(3) > article {
+  animation: flicker 3ms infinite alternate;
+  transition: ease-in 2s;
+  opacity: 0.5;
+}
+
+/*----------  clouds floating comment block  ----------*/
+
+input:checked + [trigger="zero-state"] > section:nth-of-type(1) {
+  animation: clouds1SlideDown 7s linear infinite;
+}
+
+input:checked + [trigger="zero-state"] > section:nth-of-type(2) {
+  animation: clouds2SlideDown 7s 3s linear infinite;
+}
+
+input:checked + [trigger="zero-state"] > section:nth-of-type(4) > div,
+input:checked + [trigger="zero-state"] > section:nth-of-type(4) > img {
+  transition-duration: 6s;
+  bottom: -100%;
+}
+
+/*=====  End of zero state comment block  ======*/
+
+/*=============================================
+=            Animating Clouds                 =
+=============================================*/
+
+[trigger="zero-state"] > section:nth-of-type(1) {
+  position: absolute;
+  z-index: -3;
+  top: -110%;
+  left: 50%;
+  transform: translate(-50%, -110%);
+  width: 8rem;
+}
+
+[trigger="zero-state"] > section:nth-of-type(2) {
+  position: absolute;
+  z-index: -3;
+  top: -110%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  width: 8rem;
+}
+
+[trigger="zero-state"] > section:nth-of-type(1) > div,
+[trigger="zero-state"] > section:nth-of-type(2) > div {
+  position: relative;
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  margin: 1rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+[trigger="zero-state"] > section:nth-of-type(1) div:nth-child(5n + 1) {
+  transform: translateX(-120%);
+  margin-top: calc(8rem * 7);
+}
+
+[trigger="zero-state"] > section:nth-of-type(1) div:nth-child(5n + 2) {
+  transform: translate(-350%, 20%) scale(0.5);
+}
+
+[trigger="zero-state"] > section:nth-of-type(1) div:nth-child(5n + 3) {
+  transform: translate(250%, 20%) scale(0.8);
+}
+
+[trigger="zero-state"] > section:nth-of-type(1) div:nth-child(5n + 4) {
+  transform: translate(-400%, 40%) scale(1.2);
+}
+
+[trigger="zero-state"] > section:nth-of-type(1) div:nth-child(5n + 5) {
+  transform: translate(190%, 60%) scale(0.6);
+}
+
+[trigger="zero-state"] > section:nth-of-type(1) > div::after,
+[trigger="zero-state"] > section:nth-of-type(2) > div::after {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 8rem;
+  height: calc(8rem * 0.5);
+  background-color: #fff;
+  border-radius: 8rem;
+  transform: translateX(23%);
+  content: "";
+}
+
+[trigger="zero-state"] > section:nth-of-type(1) > div::before,
+[trigger="zero-state"] > section:nth-of-type(2) > div::before {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 8rem;
+  height: calc(8rem * 0.6);
+  background-color: #fff;
+  border-radius: 8rem;
+  transform: translateX(-30%);
+  content: "";
+}
+
+/*----------  Animating Clouds #2 comment block  ----------*/
+
+[trigger="zero-state"] > section:nth-of-type(2) > div:nth-child(5n + 1) {
+  transform: translateX(-120%);
+  margin-top: calc(8rem * 7);
+}
+
+[trigger="zero-state"] > section:nth-of-type(2) > div:nth-child(5n + 2) {
+  transform: translate(-350%, 20%) scale(0.5);
+}
+
+[trigger="zero-state"] > section:nth-of-type(2) > div:nth-child(5n + 3) {
+  transform: translate(350%, 20%) scale(0.8);
+}
+
+[trigger="zero-state"] > section:nth-of-type(2) > div:nth-child(5n + 4) {
+  transform: translate(-200%, 40%) scale(1.2);
+}
+
+[trigger="zero-state"] > section:nth-of-type(2) > div:nth-child(5n + 5) {
+  transform: translate(90%, 120%) scale(0.6);
+}
+
+/*=====  End of Section comment block  ======*/
+
+/*=============================================
+=          story-time comment block           =
+=============================================*/
+
+path {
+  fill: transparent;
+}
+
+text {
+  fill: black;
+  mix-blend-mode: multiply;
+}
+
+section:nth-of-type(5) {
+  font-size: 1.5em;
+  font-family: "Montserrat";
+}
+
+[trigger="chapter-one"] > div:nth-of-type(1) > div:nth-of-type(1),
+[trigger="chapter-one"] > div:nth-of-type(1) > div:nth-of-type(2),
+[trigger="chapter-one"] > div:nth-of-type(1) > div:nth-of-type(3),
+[trigger="chapter-one"] > div:nth-of-type(1) > div:nth-of-type(4),
+[trigger="chapter-one"] > div:nth-of-type(1) > div:nth-of-type(5),
+[trigger="chapter-one"] > div:nth-of-type(1) > div:nth-of-type(6),
+[trigger="chapter-one"] > div:nth-of-type(1) > div:nth-of-type(7) {
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  height: 20%;
+}
+
+[trigger="chapter-one"] div:nth-of-type(1) > div:nth-of-type(1) {
+  top: 15%;
+  left: 100%;
+}
+
+[trigger="chapter-one"] div:nth-of-type(1) > div:nth-of-type(2) {
+  top: 20%;
+  left: 100%;
+}
+
+[trigger="chapter-one"] div:nth-of-type(1) > div:nth-of-type(3) {
+  top: 25%;
+  left: 100%;
+}
+
+[trigger="chapter-one"] div:nth-of-type(1) > div:nth-of-type(4) {
+  top: 30%;
+  left: 100%;
+}
+
+[trigger="chapter-one"] div:nth-of-type(1) > div:nth-of-type(5) {
+  top: 35%;
+  left: 100%;
+}
+
+[trigger="chapter-one"] div:nth-of-type(1) > div:nth-of-type(6) {
+  top: 40%;
+  left: 100%;
+}
+
+[trigger="chapter-one"] div:nth-of-type(1) > div:nth-of-type(7) {
+  top: 45%;
+  left: 100%;
+}
+
+input:checked
+  + [trigger="zero-state"]
+  > section:nth-of-type(5)
+  > [trigger="chapter-one"]
+  > div:nth-of-type(1)
+  > div:nth-of-type(1) {
+  transition-duration: 4s;
+  transition-delay: 3s;
+  left: 54%;
+}
+
+input:checked
+  + [trigger="zero-state"]
+  > section:nth-of-type(5)
+  > [trigger="chapter-one"]
+  > div:nth-of-type(1)
+  > div:nth-of-type(2) {
+  transition-duration: 4s;
+  transition-delay: 4.5s;
+  left: 56%;
+}
+
+input:checked
+  + [trigger="zero-state"]
+  > section:nth-of-type(5)
+  > [trigger="chapter-one"]
+  > div:nth-of-type(1)
+  > div:nth-of-type(3) {
+  transition-duration: 4s;
+  transition-delay: 6s;
+  left: 58%;
+}
+
+input:checked
+  + [trigger="zero-state"]
+  > section:nth-of-type(5)
+  > [trigger="chapter-one"]
+  > div:nth-of-type(1)
+  > div:nth-of-type(4) {
+  transition-duration: 4s;
+  transition-delay: 7.5s;
+  left: 60%;
+}
+
+input:checked
+  + [trigger="zero-state"]
+  > section:nth-of-type(5)
+  > [trigger="chapter-one"]
+  > div:nth-of-type(1)
+  > div:nth-of-type(5) {
+  transition-duration: 4s;
+  transition-delay: 9s;
+  left: 60%;
+}
+
+input:checked
+  + [trigger="zero-state"]
+  > section:nth-of-type(5)
+  > [trigger="chapter-one"]
+  > div:nth-of-type(1)
+  > div:nth-of-type(6) {
+  transition-duration: 4s;
+  transition-delay: 10.5s;
+  left: 58%;
+}
+
+input:checked
+  + [trigger="zero-state"]
+  > section:nth-of-type(5)
+  > [trigger="chapter-one"]
+  > div:nth-of-type(1)
+  > div:nth-of-type(7) {
+  transition-duration: 4s;
+  transition-delay: 12s;
+  left: 56%;
+}
+
+[trigger="chapter-one"] > div:nth-of-type(1) > a {
+  position: absolute;
+  border: 1px solid black;
+  padding: 0.5em 1.5em;
+  border-radius: 0.3em;
+  color: black;
+  top: 65%;
+  left: 120%;
+  cursor: pointer;
+}
+
+input:checked
+  + [trigger="zero-state"]
+  > section:nth-of-type(5)
+  > [trigger="chapter-one"]
+  > div:nth-of-type(1)
+  > a {
+  transition-duration: 1s;
+  left: 82%;
+}
+
+input:checked + [trigger="chapter-one"] > div:nth-of-type(1) {
+  transition-duration: 3s;
+  pointer-events: none;
+  opacity: 0;
+}
+
+/*----------  Voice-Over comment block  ----------*/
+
+input:checked
+  + [trigger="zero-state"]
+  > section:nth-of-type(5)
+  > [trigger="chapter-one"]
+  > div:nth-of-type(1)
+  > [trigger="readme-1"]
+  > a {
+  transition-duration: 1s;
+  left: 62%;
+}
+
+[trigger="readme-1"] > a {
+  position: absolute;
+  padding: 0.5em 1.5em;
+  border: 1px solid black;
+  border-radius: 0.3em;
+  color: black;
+  top: 65%;
+  left: 120%;
+  cursor: pointer;
+}
+
+[trigger="readme-1"] > embed {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: -30%;
+}
+
+input:checked + [trigger="readme-1"] > embed {
+  display: block;
+}
+
+/*=====  End of chapter-one comment block  ======*/
+
+/*=============================================
+=        Starwars text comment block          =
+=============================================*/
+
+[trigger="chapter-one"]
+  > section
+  > [trigger="chapter-two"]
+  > section:nth-of-type(1)
+  > div {
+  display: none;
+  opacity: 0;
+}
+
+[trigger="chapter-one"]
+  > section
+  > [trigger="chapter-two"]
+  > section:nth-of-type(1)
+  > a {
+  position: absolute;
+  top: 30%;
+  right: 20%;
+  opacity: 0;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 0.3em;
+  pointer-events: none;
+  color: black;
+  padding: 0.5em;
+}
+
+input:checked
+  + [trigger="chapter-one"]
+  > section
+  > [trigger="chapter-two"]
+  > section:nth-of-type(1)
+  > a {
+  opacity: 1;
+  transition-duration: 1s;
+  pointer-events: unset;
+}
+
+input:checked
+  + [trigger="chapter-one"]
+  > section
+  > [trigger="chapter-two"]
+  > section:nth-of-type(1)
+  > div {
+  position: absolute;
+  display: block;
+  width: 60%;
+  opacity: 1;
+  margin: 0 20% 0 20%;
+  height: 100%;
+  font-size: 250%;
+  text-align: justify;
+  color: black;
+  pointer-events: none;
+  transform: perspective(200px) rotateX(30deg);
+}
+
+input:checked
+  + [trigger="chapter-one"]
+  > section
+  > [trigger="chapter-two"]
+  > section:nth-of-type(1)
+  > div
+  > article {
+  position: absolute;
+  pointer-events: none;
+  top: 100%;
+  animation: scroller 30s linear;
+}
+
+input:checked
+  + [trigger="chapter-one"]
+  > section
+  > [trigger="chapter-two"]
+  > section:nth-of-type(1)
+  > div
+  > article
+  > p {
+  margin: 1.35em 0 1.85em 0;
+  pointer-events: none;
+  line-height: 1.35em;
+}
+
+input:checked + [trigger="chapter-two"] > section:nth-of-type(1) {
+  transition-duration: 3s;
+  pointer-events: none;
+  opacity: 0;
+}
+
+/*----------  Voice-over comment block  ----------*/
+
+[trigger="readme-2"] > a {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  top: 30%;
+  left: 20%;
+  border: 1px solid black;
+  border-radius: 0.3em;
+  color: black;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+input:checked
+  + [trigger="chapter-one"]
+  > section
+  > [trigger="chapter-two"]
+  > section
+  > [trigger="readme-2"]
+  > a {
+  opacity: 1;
+  transition-duration: 1s;
+  pointer-events: unset;
+}
+
+[trigger="readme-2"] > embed {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: -30%;
+}
+
+input:checked + [trigger="readme-2"] > embed {
+  display: block;
+}
+
+/*=====  End of chapter-two comment block  ======*/
+
+/*=============================================
+=          Section last chapter block         =
+=============================================*/
+
+[trigger="chapter-three"] > div > article:nth-of-type(1),
+[trigger="chapter-three"] > div > article:nth-of-type(2),
+[trigger="chapter-three"] > div > article:nth-of-type(3),
+[trigger="chapter-three"] > div > article:nth-of-type(4),
+[trigger="chapter-three"] > div > article:nth-of-type(5),
+[trigger="chapter-three"] > div > article:nth-of-type(6),
+[trigger="chapter-three"] > div > article:nth-of-type(7),
+[trigger="chapter-three"] > div > article:nth-of-type(8),
+[trigger="chapter-three"] > div > article:nth-of-type(9),
+[trigger="chapter-three"] > div > article:nth-of-type(10),
+[trigger="chapter-three"] > div > article:nth-of-type(11),
+[trigger="chapter-three"] > div > article:nth-of-type(12),
+[trigger="chapter-three"] > div > article:nth-of-type(13),
+[trigger="chapter-three"] > div > article:nth-of-type(14) {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+input:checked
+  + [trigger="chapter-two"]
+  section:nth-of-type(2)
+  [trigger="chapter-three"]
+  > div
+  > article:nth-of-type(1),
+input:checked
+  + [trigger="chapter-two"]
+  section:nth-of-type(2)
+  [trigger="chapter-three"]
+  > div
+  > article:nth-of-type(2),
+input:checked
+  + [trigger="chapter-two"]
+  section:nth-of-type(2)
+  [trigger="chapter-three"]
+  > div
+  > article:nth-of-type(3),
+input:checked
+  + [trigger="chapter-two"]
+  section:nth-of-type(2)
+  [trigger="chapter-three"]
+  > div
+  > article:nth-of-type(4),
+input:checked
+  + [trigger="chapter-two"]
+  section:nth-of-type(2)
+  [trigger="chapter-three"]
+  > div
+  > article:nth-of-type(5),
+input:checked
+  + [trigger="chapter-two"]
+  section:nth-of-type(2)
+  [trigger="chapter-three"]
+  > div
+  > article:nth-of-type(6),
+input:checked
+  + [trigger="chapter-two"]
+  section:nth-of-type(2)
+  [trigger="chapter-three"]
+  > div
+  > article:nth-of-type(7),
+input:checked
+  + [trigger="chapter-two"]
+  section:nth-of-type(2)
+  [trigger="chapter-three"]
+  > div
+  > article:nth-of-type(8),
+input:checked
+  + [trigger="chapter-two"]
+  section:nth-of-type(2)
+  [trigger="chapter-three"]
+  > div
+  > article:nth-of-type(9),
+input:checked
+  + [trigger="chapter-two"]
+  section:nth-of-type(2)
+  [trigger="chapter-three"]
+  > div
+  > article:nth-of-type(10),
+input:checked
+  + [trigger="chapter-two"]
+  section:nth-of-type(2)
+  [trigger="chapter-three"]
+  > div
+  > article:nth-of-type(11),
+input:checked
+  + [trigger="chapter-two"]
+  section:nth-of-type(2)
+  [trigger="chapter-three"]
+  > div
+  > article:nth-of-type(12),
+input:checked
+  + [trigger="chapter-two"]
+  section:nth-of-type(2)
+  [trigger="chapter-three"]
+  > div
+  > article:nth-of-type(13),
+input:checked
+  + [trigger="chapter-two"]
+  section:nth-of-type(2)
+  [trigger="chapter-three"]
+  > div
+  > article:nth-of-type(14) {
+  transition: 5s;
+  opacity: 1;
+  pointer-events: unset;
+}
+
+[trigger="chapter-three"] > div > article:nth-of-type(1) {
+  top: 15%;
+  left: 15%;
+}
+
+[trigger="chapter-three"] > div > article:nth-of-type(2) {
+  top: 22%;
+  left: 12%;
+}
+
+[trigger="chapter-three"] > div > article:nth-of-type(3) {
+  top: 22%;
+  left: 58%;
+}
+
+[trigger="chapter-three"] > div > article:nth-of-type(4) {
+  top: 29%;
+  left: 8%;
+}
+
+[trigger="chapter-three"] > div > article:nth-of-type(5) {
+  top: 29%;
+  left: 62%;
+}
+
+[trigger="chapter-three"] > div > article:nth-of-type(6) {
+  top: 36%;
+  left: 4%;
+}
+
+[trigger="chapter-three"] > div > article:nth-of-type(7) {
+  top: 36%;
+  left: 62%;
+}
+
+[trigger="chapter-three"] > div > article:nth-of-type(8) {
+  top: 43%;
+  left: 5%;
+}
+
+[trigger="chapter-three"] > div > article:nth-of-type(9) {
+  top: 43%;
+  left: 60%;
+}
+
+[trigger="chapter-three"] > div > article:nth-of-type(10) {
+  top: 50%;
+  left: 7%;
+}
+
+[trigger="chapter-three"] > div > article:nth-of-type(11) {
+  top: 50%;
+  left: 58%;
+}
+
+[trigger="chapter-three"] > div > article:nth-of-type(12) {
+  top: 57%;
+  left: 10%;
+}
+
+[trigger="chapter-three"] > div > article:nth-of-type(13) {
+  top: 64%;
+  left: 14%;
+}
+
+[trigger="chapter-three"] > div > article:nth-of-type(14) {
+  top: 71%;
+  left: 37%;
+}
+
+/*----------  glitching effect comment block  ----------*/
+
+[trigger="chapter-three"] > div > article > h2 {
+  font-size: 1.2em;
+  color: black;
+  font-weight: 400;
+}
+
+[trigger="chapter-three"] > div > article > h2 > span {
+  position: relative;
+  font-size: 1.2em;
+  cursor: wait;
+  font-weight: 700;
+  color: transparent;
+  white-space: nowrap;
+  transform: skew(-10deg);
+}
+
+[trigger="chapter-three"] > div > article > h2 > span::before,
+[trigger="chapter-three"] > div > article > h2 > span::after,
+[trigger="chapter-three"] > div > article > h2 > span .secondGlitch::before,
+[trigger="chapter-three"] > div > article > h2 > span .secondGlitch::after,
+[trigger="chapter-three"] > div > article > h2 > span .firstGlitch::before,
+[trigger="chapter-three"] > div > article > h2 > span .firstGlitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: black;
+  z-index: 1;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+[trigger="chapter-three"] > div > article > h2 > span:hover::before,
+[trigger="chapter-three"] > div > article > h2 > span:hover::after,
+[trigger="chapter-three"]
+  > div
+  > article
+  > h2
+  > span:hover
+  .secondGlitch::before,
+[trigger="chapter-three"]
+  > div
+  > article
+  > h2
+  > span:hover
+  .secondGlitch::after,
+[trigger="chapter-three"]
+  > div
+  > article
+  > h2
+  > span:hover
+  .firstGlitch::before,
+[trigger="chapter-three"]
+  > div
+  > article
+  > h2
+  > span:hover
+  .firstGlitch::after {
+  color: magenta;
+}
+
+/* tutorial: https://www.creativebloq.com/how-to/how-to-create-glitch-text-and-image-effects-in-css */
+
+[trigger="chapter-three"]
+  > div
+  > article
+  > h2
+  > span:hover
+  .secondGlitch::before {
+  color: cyan;
+  animation: trans4 3.2s infinite;
+  z-index: -1;
+  clip-path: inset(62% 0 0 0);
+}
+
+[trigger="chapter-three"]
+  > div
+  > article
+  > h2
+  > span:hover
+  .secondGlitch::after {
+  color: yellow;
+  animation: trans5 3.2s infinite;
+  z-index: -1;
+  clip-path: inset(62% 0 0 0);
+}
+
+[trigger="chapter-three"] > div > article > h2 > span:hover::before {
+  clip-path: inset(0 0 43% 0);
+  animation: trans6 3.2s infinite;
+  color: black;
+}
+
+[trigger="chapter-three"] > div > article > h2 > span:hover::after {
+  clip-path: inset(62% 0 0 0);
+}
+
+[trigger="chapter-three"]
+  > div
+  > article
+  > h2
+  > span:hover
+  .firstGlitch::before {
+  clip-path: inset(57% 0 42% 0);
+  animation: trans2 0.8s steps(1, start) infinite;
+  color: black;
+}
+
+[trigger="chapter-three"]
+  > div
+  > article
+  > h2
+  > span:hover
+  .firstGlitch::after {
+  clip-path: inset(58% 0 38% 0);
+  animation: trans1 0.8s steps(1, start) infinite;
+  color: black;
+}
+
+/*----------  buttons last chapter comment block  ----------*/
+
+[trigger="readme-3"] > a {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  top: 85%;
+  right: 80%;
+  border: 1px solid black;
+  border-radius: 0.3em;
+  color: black;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+input:checked
+  + [trigger="chapter-two"]
+  > section
+  > [trigger="chapter-three"]
+  > div
+  > [trigger="readme-3"]
+  > a {
+  opacity: 1;
+  transition-duration: 1s;
+  pointer-events: unset;
+}
+
+input:checked
+  + [trigger="chapter-two"]
+  > section
+  > [trigger="chapter-three"]
+  > div
+  > a {
+  opacity: 1;
+  transition-duration: 1s;
+  pointer-events: unset;
+}
+
+[trigger="chapter-three"] > div > a {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  top: 85%;
+  left: 80%;
+  border: 1px solid black;
+  border-radius: 0.3em;
+  color: black;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+[trigger="readme-3"] > embed {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: -30%;
+}
+
+input:checked + [trigger="readme-3"] > embed {
+  display: block;
+}
+
+input:checked + [trigger="chapter-three"] > div:nth-of-type(1) {
+  transition-duration: 3s;
+  pointer-events: none;
+  opacity: 0;
+}
+
+/*=====  End of last chapter comment block  ======*/
+
+input:checked + [trigger="chapter-three"] > div:nth-of-type(2) {
+  background-color: white;
+  background-position: cover;
+  margin-left: -7px;
+  margin-top: -7px;
+  transition: 3s;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+/*=============================================
+=            Animations comment block         =
+=============================================*/
+
+@keyframes scroller {
+  0% {
+    top: 100%;
+    opacity: 0;
+  }
+  7% {
+    top: 100%;
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    top: -250%;
+    opacity: 0;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    transform: rotate(-1deg);
+  }
+
+  20% {
+    transform: rotate(1deg);
+  }
+
+  40% {
+    transform: rotate(-1deg);
+  }
+
+  60% {
+    transform: rotate(1deg) scaleY(1.04);
+  }
+
+  80% {
+    transform: rotate(-2deg) scaleY(0.92);
+  }
+
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+@keyframes clouds1SlideDown {
+  0% {
+    transform: translate(-50%, -60%);
+  }
+
+  100% {
+    transform: translate(-50%, 65%);
+  }
+}
+
+@keyframes clouds2SlideDown {
+  0% {
+    transform: translate(-50%, -60%);
+  }
+
+  100% {
+    transform: translate(-50%, 65%);
+  }
+}
+
+@keyframes balloonBounce {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+
+  50% {
+    transform: translate(-50%, -60%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes trans1 {
+  0% {
+    transform: translateX(-1%);
+  }
+  20% {
+    transform: translateX(0.5%);
+  }
+  40% {
+    transform: translateX(-0.2%);
+  }
+  60% {
+    transform: translateX(0.6%);
+  }
+  90% {
+    transform: translateX(0.8%);
+  }
+  100% {
+    transform: translateX(-1%);
+  }
+}
+@keyframes trans2 {
+  0% {
+    transform: translateX(5%);
+  }
+  20% {
+    transform: translateX(2.5%);
+  }
+  55% {
+    transform: translateX(1.8%);
+  }
+  60% {
+    transform: translateX(2.6%);
+  }
+  80% {
+    transform: translateX(2.8%);
+  }
+  100% {
+    transform: translateX(3%);
+  }
+}
+@keyframes trans3 {
+  0% {
+    transform: translateX(1%);
+  }
+  20% {
+    transform: translateX(1.1%);
+  }
+  45% {
+    transform: translateX(1.2%);
+  }
+  70% {
+    transform: translateX(1.4%);
+  }
+  90% {
+    transform: translateX(0.6%);
+  }
+  100% {
+    transform: translateX(1.2%);
+  }
+}
+@keyframes trans4 {
+  0% {
+    transform: translateX(0%);
+  }
+  60% {
+    transform: translateX(0.5%);
+  }
+  60.001% {
+    transform: translateX(0.3%);
+  }
+  100% {
+    transform: translateX(0.2%);
+  }
+}
+@keyframes trans5 {
+  0% {
+    transform: translateX(0%);
+  }
+  60% {
+    transform: translateX(-0.5%);
+  }
+  60.001% {
+    transform: translateX(-0.3%);
+  }
+  100% {
+    transform: translateX(-0.2%);
+  }
+}
+@keyframes trans6 {
+  0% {
+    transform: translateX(0.6%);
+  }
+  60% {
+    transform: translateX(1.1%);
+  }
+  60.001% {
+    transform: translateX(0.9%);
+  }
+  100% {
+    transform: translateX(1.2%);
+  }
+}
+
+/*=====  End of Section comment block  ======*/
+
+/* Dark / Light mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-image: url(../images/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+  body [trigger="zero-state"] > p {
+    color: white;
+  }
+
+  text {
+    fill: white;
+  }
+
+  [trigger="zero-state"]
+    > section:nth-of-type(5)
+    > [trigger="chapter-one"]
+    > div
+    > a {
+    color: white;
+    border: 1px solid white;
+  }
+
+  body [trigger="readme-1"] > a {
+    border: 1px solid white;
+    color: white;
+  }
+
+  body [trigger="zero-state"] > section:nth-of-type(1),
+  body [trigger="zero-state"] > section:nth-of-type(2) {
+    opacity: 0.5;
+  }
+
+  [trigger="zero-state"]
+    > section:nth-of-type(5)
+    > [trigger="chapter-one"]
+    > section:nth-of-type(1)
+    > [trigger="chapter-two"]
+    > section:nth-of-type(1)
+    > a {
+    border: 1px solid white;
+    color: white;
+  }
+
+  body [trigger="readme-2"] > a {
+    border: 1px solid white;
+    color: white;
+  }
+
+  [trigger="zero-state"]
+    > section:nth-of-type(5)
+    > [trigger="chapter-one"]
+    > section:nth-of-type(1)
+    > [trigger="chapter-two"]
+    > section:nth-of-type(1)
+    > div {
+    color: white;
+  }
+
+  body [trigger="chapter-three"] > div > article > h2 > span::before,
+  [trigger="chapter-three"] > div > article > h2 > span::after,
+  [trigger="chapter-three"] > div > article > h2 > span .secondGlitch::before,
+  [trigger="chapter-three"] > div > article > h2 > span .secondGlitch::after,
+  [trigger="chapter-three"] > div > article > h2 > span .firstGlitch::before,
+  [trigger="chapter-three"] > div > article > h2 > span .firstGlitch::after {
+    color: white;
+  }
+
+  body [trigger="chapter-three"] > div > article > h2 {
+    color: white;
+  }
+
+  body [trigger="chapter-three"] > div > article > h2 > span:hover::before {
+    color: white;
+  }
+
+  body [trigger="chapter-three"] > div > article > h2 > span:hover::after {
+    color: white;
+  }
+
+  body
+    [trigger="chapter-three"]
+    > div
+    > article
+    > h2
+    > span:hover
+    .firstGlitch::before {
+    color: white;
+  }
+
+  body
+    [trigger="chapter-three"]
+    > div
+    > article
+    > h2
+    > span:hover
+    .firstGlitch::after {
+    color: white;
+  }
+
+  body [trigger="readme-3"] > a {
+    border: 1px solid white;
+    color: white;
+  }
+
+  body [trigger="chapter-three"] > div > a {
+    border: 1px solid white;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #a1dff8;
+    color: black;
+  }
+}
+
+/* Custom swutch light and dark mode */
+#body:target {
+  fill: black;
+  background-image: none;
+  background-color: #a1dff8;
+}
+
+#body:target text {
+  fill: black;
+}
+
+#head:target + body text {
+  fill: white;
+}
+
+#head:target + body [trigger="zero-state"] > p {
+  color: white;
+}
+
+#head:target + body [trigger="chapter-one"] > div > a {
+  color: white;
+  border: 1px solid white;
+}
+
+#head:target + body [trigger="readme-1"] > a {
+  border: 1px solid white;
+  color: white;
+}
+
+#head:target + body [trigger="zero-state"] > section:nth-of-type(1),
+#head:target + body [trigger="zero-state"] > section:nth-of-type(2) {
+  opacity: 0.5;
+}
+
+#head:target + body [trigger="chapter-two"] > section:nth-of-type(1) > a {
+  border: 1px solid white;
+  color: white;
+}
+
+#head:target + body [trigger="readme-2"] > a {
+  border: 1px solid white;
+  color: white;
+}
+
+#head:target + body [trigger="chapter-two"] > section:nth-of-type(1) > div {
+  color: white;
+}
+
+#head:target + body [trigger="chapter-three"] > div > a {
+  border: 1px solid white;
+  color: white;
+}
+
+#head:target + body [trigger="readme-3"] > a {
+  border: 1px solid white;
+  color: white;
+}
+
+#head:target
+  + body
+  [trigger="chapter-three"]
+  > div
+  > article
+  > h2
+  > span::before,
+[trigger="chapter-three"] > div > article > h2 > span::after,
+[trigger="chapter-three"] > div > article > h2 > span .secondGlitch::before,
+[trigger="chapter-three"] > div > article > h2 > span .secondGlitch::after,
+[trigger="chapter-three"] > div > article > h2 > span .firstGlitch::before,
+[trigger="chapter-three"] > div > article > h2 > span .firstGlitch::after {
+  color: white;
+}
+
+#head:target + body [trigger="chapter-three"] > div > article > h2 {
+  color: white;
+}
+
+#head:target
+  + body
+  [trigger="chapter-three"]
+  > div
+  > article
+  > h2
+  > span:hover::before {
+  color: white;
+}
+
+#head:target
+  + body
+  [trigger="chapter-three"]
+  > div
+  > article
+  > h2
+  > span:hover::after {
+  color: white;
+}
+
+#head:target
+  + body
+  [trigger="chapter-three"]
+  > div
+  > article
+  > h2
+  > span:hover
+  .firstGlitch::before {
+  color: white;
+}
+
+#head:target
+  + body
+  [trigger="chapter-three"]
+  > div
+  > article
+  > h2
+  > span:hover
+  .firstGlitch::after {
+  color: white;
+}
