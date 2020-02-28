@@ -8,12 +8,8 @@ The whole process of CSS to the rescue will be documented here!
 * [To Do](#to-do)
 * [Description](#description)
 * [Usage](#usage)
-  * [Packages and Technologies](#packages-and-technologies)
-* [How It Works](#how-it-works)
-  * [Context](#context)
-  * [Restrictions](#restrictions)
+* [CSS Feature](#css-feature)
 * [Sources](#sources)
-* [Credits](#credits)
 * [Licence](#licence)
 
 ## Description
@@ -36,11 +32,27 @@ Run the index.html into your browser
 
 **Demo** is also live at: https://rooyydoe.github.io/css-to-the-rescue-1920/week3/
 
-## How It Works
+## CSS Feature
+
+
 
 ## Sources
 
-## Credits
+[:before and :after](https://css-tricks.com/almanac/selectors/a/after-and-before/)
+[Pointer-Events](https://css-tricks.com/almanac/properties/p/pointer-events/)
+[Star Wars Text](https://codepen.io/rooyydoe/pen/xxGdGwR)
+[Animation](https://css-tricks.com/almanac/properties/a/animation/)
+[SVG and Animation](https://dev.to/theliquidcharcoal/pure-html-animation-animate-svg-with-animate-2a5m)
+[Background](https://css-tricks.com/almanac/properties/b/background/)
+[:checked](https://developer.mozilla.org/en-US/docs/Web/CSS/:checked)
+[Embed voice over](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed)
+[:checked](https://css-tricks.com/almanac/selectors/c/checked/)
+[clip-path](https://css-tricks.com/almanac/properties/c/clip-path/)
+[Cursor](https://css-tricks.com/almanac/properties/c/cursor/)
+[:first-of-type](https://css-tricks.com/almanac/selectors/f/first-of-type/)
+[mix-blend-mode](https://css-tricks.com/almanac/properties/m/mix-blend-mode/)
+[nth-of-type](https://css-tricks.com/almanac/selectors/n/nth-of-type/)
+[z-index](https://css-tricks.com/almanac/properties/z/z-index/)
 
 # License
 
